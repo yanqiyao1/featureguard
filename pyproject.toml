@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "featureguard-flow"
+version = "0.1.0"
+description = "Find feature schema drift between scikit-learn training and prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+featureguard = "featureguard.cli:main"
+
+[tool.setuptools]
+packages = ["featureguard"]
